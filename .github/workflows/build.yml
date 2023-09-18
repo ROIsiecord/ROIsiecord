@@ -29,7 +29,6 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          automatic_release_tag: rosiecord_${{ steps.version.outputs.__DISCORD_VERSION }}
+          prerelease: true
           title: Rosiecord ${{ steps.version.outputs.__DISCORD_VERSION }}
           files: Dist/*.ipa
