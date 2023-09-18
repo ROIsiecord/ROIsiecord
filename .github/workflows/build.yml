@@ -1,4 +1,8 @@
 name: Build Enmity and Inject Rosiecord
+permissions:
+  contents: "write"
+  packages: "write"
+  pull-requests: "read"
 on:
   push:
   workflow_dispatch:
